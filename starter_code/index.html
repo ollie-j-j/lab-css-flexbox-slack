@@ -9,8 +9,11 @@
   <!-- link the Font Awesome stylesheet - CDN -->
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="./stylesheets/reset.css" />
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
   <title>Slack is your digital HQ | Slack</title>
@@ -37,7 +40,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="button-container">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -61,12 +64,12 @@
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span>Slack is free to try</span> for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="sign-up-container">
+        <button class="email-button">Sign up with email</button>
 
-        <button>
+        <button class="google-logo-button">
           <img src="./images/logo-google.png" alt="Google logo" />
           <span>Sign up with Google</span>
         </button>
@@ -74,16 +77,16 @@
 
     </div>
 
-    <div>
+    <div class="hero-image">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="companies-section">
       <p>Trusted by companies all over the world</p>
 
-      <div>
+      <div class="logos-container">
         <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
@@ -94,7 +97,7 @@
 
     </section>
 
-    <section>
+    <section class="connectedness-container">
       <div>
         <img src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
@@ -113,7 +116,10 @@
       </div>
     </section>
 
-    <section>
+    <section class="flexibility-container">
+      <div>
+        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+      </div>
       <div>
         <h2>Choose how you want to work</h2>
         <p>
@@ -127,12 +133,9 @@
         </a>
       </div>
 
-      <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
-      </div>
     </section>
 
-    <section>
+    <section class="speed-container">
       <div>
         <img src="./images/speed-mobile.png" alt="speed" />
       </div>
@@ -151,19 +154,19 @@
     </section>
 
 
-    <section>
+    <sectio class="teams">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
-      <div>
-        <button>Meet Slack for enterprise</button>
-        <button>Talk to sales</button>
+      <div class="team-buttons">
+        <button id="button-enterprise">Meet Slack for enterprise</button>
+        <button id="button-sales">Talk to sales</button>
       </div>
 
-      <ul>
+      <ul class="percentages-container">
         <li>
           <p><span>85%</span></p>
-          <p>
+          <p class="text">
             of users say Slack has improved communication
             <sup>*</sup>
           </p>
@@ -171,7 +174,7 @@
 
         <li>
           <p><span>86%</span></p>
-          <p>
+          <p class="text">
             feel their ability to work remotely has improved has improved
             <sup>*</sup>
           </p>
@@ -179,7 +182,7 @@
 
         <li>
           <p><span>88%</span></p>
-          <p>
+          <p class="text">
             feel more connected to their teams*
             <sup>*</sup>
           </p>
@@ -187,8 +190,8 @@
       </ul>
     </section>
 
-    <section>
-      <h3>Welcome to your new digital HQ</h3>
+    <section class = "welcome-container">
+      <h3 id = "welcome-digital">Welcome to your new digital HQ</h3>
 
       <button>Try for free</button>
       <button>Talk to sales</button>
